@@ -1,7 +1,7 @@
 {
   "miniprogramRoot": "./",
-  "projectname": "taro-react-tree",
-  "appid": "testAppId",
+  "projectname": "taro-canvas",
+  "appid": "wx58b7e0e6a064b3d7",
   "setting": {
     "es6": false,
     "minified": false

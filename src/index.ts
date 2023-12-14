@@ -1,4 +1,4 @@
-// import * as Tree from './components/Tree'
+import TaroCanvas from './components/TaroCanvas'
+import Tree from './components/Tree/index'
 
-export { default as Tree } from '@/components/Tree/'
-// export default Tree
+export { TaroCanvas, Tree }

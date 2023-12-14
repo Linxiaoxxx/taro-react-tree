@@ -1,8 +1,8 @@
 import { View, Text, Image } from '@tarojs/components'
 import { useContext, useEffect, useState } from 'react'
+import '@/style/Tree.scss'
 import { TreeContext } from './index'
-import './index.less'
-import { OnCheckFun, TreeNodeItem, TreeNodeProps } from './interface'
+import { OnCheckFun, TreeNodeItem, TreeNodeProps } from './type'
 
 const TreeNode = (props: TreeNodeProps) => {
   const { data, level, onCheck } = props

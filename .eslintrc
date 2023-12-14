@@ -1,14 +1,9 @@
 {
-  "extends": ["taro/react", "plugin:prettier/recommended"],
+  "extends": ["taro/react"],
   "rules": {
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
-    "prettier/prettier": ["error", { "endOfLine": "auto" }],
-    "no-unused-expressions": ["error", { "allowShortCircuit": true, "allowTernary": true }], // 允许使用短路、三目
-    "func-names": ["error", "as-needed"], // 需要时添加函数名称
-    "no-param-reassign": ["error", { "props": false }], // 函数形参可修改
-    "no-plusplus": "off",
-    "no-shadow": "off"
+    "import/no-commonjs": "off",
+    "single-quote": "off"
   }
 }
-

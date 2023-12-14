@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "experimentalDecorators": true,
-    "jsx": "react-jsx",
+    "allowSyntheticDefaultImports": true, // 允许从没有设置默认导出的模块中默认导入。
+    "experimentalDecorators": true, // 启用实验性的ES装饰器。
+    "jsx": "react-jsx", // 控制 JSX 在 JavaScript 文件中的输出方式
     "moduleResolution": "node",
     "noImplicitAny": false,
     "noUnusedLocals": true,
@@ -12,18 +12,11 @@
     "sourceMap": true,
     "strictNullChecks": true,
     "resolveJsonModule": true,
-    "target": "es5",
+    "target": "es2017",
     "module": "es6",
-    "downlevelIteration": true,
-    "baseUrl": ".",
-    "types": ["node"]
+    "outDir": "./lib"
   },
   "compileOnSave": false,
   "exclude": ["node_modules/*", "dist/*"],
-  "include": [
-    "src/index.ts",
-    // "src/TaroCanvas.css",
-    "src/utils/*",
-    "src/components/**/*"
-  ]
+  "include": ["src/index.ts", "src/utils/*", "src/components/**/*"]
 }

@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
+    "target": "es2017",
+    "module": "commonjs",
     "removeComments": false,
     "preserveConstEnums": true,
     "moduleResolution": "node",
@@ -18,12 +18,17 @@
     "jsx": "react-jsx",
     "allowJs": true,
     "resolveJsonModule": true,
-    "typeRoots": ["node_modules/@types"],
+    "typeRoots": [
+      "node_modules/@types",
+      "global.d.ts"
+    ],
     "paths": {
-      "@/*": ["src/*"]
-    }
+      "@/*": ["src/*"],
+    },
   },
-  "include": ["./src", "./types", "./config"],
-  "compileOnSave": false
+  "compileOnSave": false,
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
 }
-

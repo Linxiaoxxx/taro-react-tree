@@ -1,8 +1,8 @@
 import { View } from '@tarojs/components'
 import React from 'react'
+import '@/style/Tree.scss'
 import TreeNode from './TreeNode'
-import './index.less'
-import { TreeContextProps, TreeProps } from './interface'
+import { TreeContextProps, TreeProps } from './type'
 
 export const TreeContext = React.createContext<TreeContextProps>({})
 const Tree = (props: TreeProps) => {
